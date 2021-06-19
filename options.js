@@ -1,7 +1,8 @@
-import { readFile } from 'fs/promises'
+import { readFile } from 'fs'
+import { promisify } from 'util'
 
 async function opts () {
-  const pkg = JSON.parse(await readFile('./package.json'))
+  const pkg = JSON.parse(await promisify(readFile)('./package.json'))
 
   return {
     // cmd, homepage, bugs all pulled from package.json
