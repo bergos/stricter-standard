@@ -1,4 +1,8 @@
 const examples = [{
+  filename: 'arrow-parens.example.js',
+  line: 1,
+  message: 'Unexpected parentheses around single function argument.'
+}, {
   filename: 'brace-style-1tbs.example.js',
   line: 1,
   message: 'Statement inside of curly braces should be on next line.'

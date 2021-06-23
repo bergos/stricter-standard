@@ -1,6 +1,7 @@
 {
   "extends": ["standard"],
   "rules": {
+    "arrow-parens": ["error", "as-needed"],
     "brace-style": ["error", "1tbs"],
     "curly": ["error","all"],
     "import/order": ["error", {
