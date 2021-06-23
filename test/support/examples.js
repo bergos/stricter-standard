@@ -7,6 +7,10 @@ const examples = [{
   line: 1,
   message: 'Expected { after \'if\' condition.'
 }, {
+  filename: 'import-exports-last.example.js',
+  line: 1,
+  message: 'Export statements should appear at the end of the file'
+}, {
   filename: 'import-order-alphabetize.example.js',
   line: 2,
   message: '`assert` import should occur before import of `fs`'

@@ -3,6 +3,7 @@
   "rules": {
     "brace-style": ["error", "1tbs"],
     "curly": ["error","all"],
+    "import/exports-last": ["error"],
     "import/order": ["error", {
        "alphabetize": { "order": "asc", "caseInsensitive": true },
        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object"]
