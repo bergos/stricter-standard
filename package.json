@@ -1,6 +1,6 @@
 {
   "name": "stricter-standard",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Stricter JavaScript Standard Style",
   "type": "module",
   "main": "index.js",
