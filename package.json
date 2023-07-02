@@ -8,11 +8,11 @@
     "stricter-standard": "./bin/cmd.js"
   },
   "scripts": {
-    "test": "mocha && ./bin/cmd.js *.js ./bin/*.js"
+    "test": "c8 --reporter=lcov --reporter=text-summary mocha && ./bin/cmd.js *.js ./bin/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bergos/stricter-standard.git"
+    "url": "https://github.com/bergos/stricter-standard.git"
   },
   "keywords": [
     "code",
@@ -36,6 +36,7 @@
     "standard-engine": "^15.1.0"
   },
   "devDependencies": {
+    "c8": "^8.0.0",
     "mocha": "^10.2.0"
   }
 }
