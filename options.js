@@ -13,7 +13,7 @@ async function opts () {
     tagline: 'Stricter Standard',
     eslint: await import('eslint'),
     eslintConfig: {
-      configFile: (new URL('eslintrc.json', import.meta.url)).pathname
+      overrideConfigFile: (new URL('eslintrc.json', import.meta.url)).pathname
     }
   }
 }
