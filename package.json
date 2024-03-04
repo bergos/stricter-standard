@@ -8,7 +8,7 @@
     "stricter-standard": "./bin/cmd.js"
   },
   "scripts": {
-    "test": "c8 --reporter=lcov --reporter=text-summary mocha && ./bin/cmd.js *.js ./bin/*.js"
+    "test": "stricter-standard *.js bin/*.js && c8 --reporter=lcov --reporter=text-summary mocha && ./bin/cmd.js *.js ./bin/*.js"
   },
   "repository": {
     "type": "git",
@@ -28,15 +28,16 @@
   },
   "homepage": "https://github.com/bergos/stricter-standard",
   "dependencies": {
-    "eslint": "^8.44.0",
+    "eslint": "^8.57.0",
     "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "standard-engine": "^15.1.0"
   },
   "devDependencies": {
-    "c8": "^8.0.0",
-    "mocha": "^10.2.0"
+    "c8": "^9.1.0",
+    "mocha": "^10.3.0",
+    "stricter-standard": "^0.3.0"
   }
 }

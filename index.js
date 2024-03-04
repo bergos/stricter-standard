@@ -1,8 +1,5 @@
-import engine from 'standard-engine'
-import opts from './options.js'
+/*! standard. MIT License. Feross Aboukhadijeh <https://feross.org/opensource> */
+import { StandardEngine } from 'standard-engine'
+import options from './options.js'
 
-async function init () {
-  return new engine.StandardEngine(await opts())
-}
-
-export default init
+export default new StandardEngine(options)
