@@ -5,15 +5,9 @@ import stricterStandard from '../index.js'
 import examples from './support/examples.js'
 
 describe('api', () => {
-  let linter = null
-
-  before (async () => {
-    linter = await stricterStandard()
-  })
-
   for (const example of examples) {
     it(`should find error in example: ${basename(example.filename, '.example.js')}`, () => {
-      linter.lintFiles([resolve('./test/support/', example.filename)], {}, (err, { results }) => {
+      stricterStandard.lintFiles([resolve('./test/support/', example.filename)], {}, (err, { results }) => {
         if (err) {
           throw err
         }
