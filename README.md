@@ -1,9 +1,9 @@
-# Stricter JavaScript Standard Style
+# stricter-standard
 
 [![build status](https://img.shields.io/github/actions/workflow/status/bergos/stricter-standard/test.yaml?branch=master)](https://github.com/bergos/stricter-standard/actions/workflows/test.yaml)
 [![npm version](https://img.shields.io/npm/v/stricter-standard.svg)](https://www.npmjs.com/package/stricter-standard)
 
-`stricter-standard` is a command line tool based on [standard](https://standardjs.com/).
+`stricter-standard` is a stricter JavaScript Standard Style command line tool based on [standard](https://standardjs.com/).
 It uses the same set of rules and adds some more to fill in the gaps.
 
 ## Usage
